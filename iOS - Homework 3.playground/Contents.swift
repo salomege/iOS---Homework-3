@@ -98,14 +98,14 @@ else{print("word doesn't contein unic cheracters")
     }
 
   //10
-var filmDictionary = [String : Double] ()
- filmDictionary = [
+var filmDictionary = [
     "PAST LIVES": 9.2,
     "BLACKBERRY": 9.3,
     "RYE LANE": 9.1,
     "FULL TIME": 8.9,
     "THE BEASTS": 9.5
 ]
-let rating = filmDictionary.values.reduce(0, +)
+let ratingSum = filmDictionary.values.reduce(0, +)
 let filmCount = filmDictionary.count
-let avarage = rating / filmCount
+let avarageRating = ratingSum / Double(filmCount)
+print (avarageRating)
